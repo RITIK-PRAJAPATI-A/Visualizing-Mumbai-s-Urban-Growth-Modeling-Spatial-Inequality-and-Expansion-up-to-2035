@@ -60,14 +60,38 @@ def generate_interactive_map():
         
     projections_dict = {p["ward"]: p for p in model_results["ward_projections"]}
     
-    # Initialize Folium Map centered on Mumbai (Chhatrapati Shivaji Maharaj Terminus / MMR center)
+    # Initialize Folium Map centered on Mumbai
     mumbai_center = [19.0760, 72.8777]
     m = folium.Map(
         location=mumbai_center,
         zoom_start=11,
-        tiles="OpenStreetMap",
+        tiles=None,
         control_scale=True
     )
+
+    # Reliable Basemap 1: Esri World Street Map (crisp, detailed, no API key, allows local file:/// access)
+    folium.TileLayer(
+        tiles="https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+        attr="Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS",
+        name="🗺️ Street Map (Esri)",
+        control=True
+    ).add_to(m)
+
+    # Reliable Basemap 2: Esri World Light Gray (clean, minimalistic for thematic inequality layers)
+    folium.TileLayer(
+        tiles="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
+        attr="Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ",
+        name="🏙️ Light Gray Canvas (Esri)",
+        control=True
+    ).add_to(m)
+
+    # Reliable Basemap 3: Esri World Imagery (high-res satellite background)
+    folium.TileLayer(
+        tiles="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+        attr="Tiles &copy; Esri &mdash; Source: Esri, DigitalGlobe, GeoEye, Earthstar Geographics",
+        name="🛰️ Satellite Imagery (Esri)",
+        control=True
+    ).add_to(m)
 
     # Style function for NDVI Green Cover
     def style_green(feature):
@@ -191,16 +215,19 @@ def generate_interactive_map():
     
     # Add Title Banner
     title_html = """
-    <div style="position: fixed; top: 10px; left: 60px; z-index: 1000; background: white; 
-                padding: 10px 16px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
-                border: 1px solid #e5e7eb; font-family: Arial, sans-serif;">
-        <h4 style="margin: 0; color: #111827; font-size: 15px;">Mumbai Urban Growth & Inequality Atlas</h4>
-        <p style="margin: 2px 0 0 0; color: #6b7280; font-size: 11px;">
-            Google Earth Engine (GHSL 1975–2025, Sentinel-2, VIIRS) • 24 BMC Wards
+    <div style="position: fixed; top: 12px; left: 70px; z-index: 1000; background: white; 
+                padding: 10px 16px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.15);
+                border: 1px solid #d1d5db; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+        <h4 style="margin: 0; color: #1e3a8a; font-size: 15px; font-weight: 700;">Mumbai Urban Growth & Inequality Atlas</h4>
+        <p style="margin: 2px 0 0 0; color: #4b5563; font-size: 11px;">
+            Google Earth Engine (GHSL, Sentinel-2, VIIRS) • 24 BMC Wards
         </p>
     </div>
     """
     m.get_root().html.add_child(folium.Element(title_html))
+
+    # Auto-fit map viewport to Mumbai BMC Ward boundaries
+    m.fit_bounds(layer_green.get_bounds())
 
     output_html_path = os.path.join(REPORTS_DIR, "mumbai_interactive_map.html")
     m.save(output_html_path)
