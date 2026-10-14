@@ -16,10 +16,10 @@ MMR_BBOX = {
     "north": 19.45
 }
 
-# Mumbai City + Suburban boundary URL from public open geospatial archive (DataMeet)
-MUMBAI_WARDS_URL = "https://raw.githubusercontent.com/datameet/maps/master/Municipal_Wards/Mumbai/mumbai_wards.geojson"
+# Official Mumbai BMC 24 Admin Wards GeoJSON URL
+MUMBAI_WARDS_URL = "https://raw.githubusercontent.com/sanjanakrishnan/mumbai_spatial_data/master/BMC_admin_wards.geojson"
 
-def download_mumbai_wards(output_path: str = "data/raw/mumbai_wards.geojson") -> str:
+def download_mumbai_wards(output_path: str = "data/raw/mumbai_bmc_wards.geojson") -> str:
     """Downloads Mumbai 24 Administrative Wards GeoJSON if not present."""
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     

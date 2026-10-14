@@ -84,7 +84,6 @@ Project_1/
 │       ├── urban_growth_trajectories.png        # 2000-2035 growth curves
 │       └── lorenz_inequality_curve.png          # Lorenz curve for spatial inequality
 │
-├── PROJECT_MODEL_EXPLANATION.txt                # In-depth architectural & mathematical doc
 ├── requirements.txt
 ├── .gitignore
 └── README.md
