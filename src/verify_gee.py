@@ -1,11 +1,14 @@
 """
 Script to verify Google Earth Engine connection and test project access.
-Project ID: maximal-dynamo-506718-g8
 """
 
+import os
 import sys
 
-def test_connection(project_id: str = "maximal-dynamo-506718-g8"):
+# Replace with your Google Cloud Project ID or set the GEE_PROJECT environment variable
+DEFAULT_PROJECT_ID = os.environ.get("GEE_PROJECT", "your-gee-project-id")
+
+def test_connection(project_id: str = DEFAULT_PROJECT_ID):
     try:
         import ee
     except ImportError:
@@ -37,5 +40,4 @@ def test_connection(project_id: str = "maximal-dynamo-506718-g8"):
         print(f"[!] Warning during test query: {query_err}")
 
 if __name__ == "__main__":
-    PROJECT_ID = "maximal-dynamo-506718-g8"
-    test_connection(PROJECT_ID)
+    test_connection()

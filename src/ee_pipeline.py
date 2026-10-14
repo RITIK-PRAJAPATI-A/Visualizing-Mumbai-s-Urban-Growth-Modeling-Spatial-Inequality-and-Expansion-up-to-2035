@@ -1,14 +1,15 @@
 """
 Earth Engine Data Pipeline for Mumbai Urban Growth & Spatial Inequality Analysis
-Project: maximal-dynamo-506718-g8
 """
 
+import os
 import ee
 
 # -------------------------------------------------------------------------
 # 1. Configuration & Region Definition
 # -------------------------------------------------------------------------
-PROJECT_ID = "maximal-dynamo-506718-g8"
+# Set your Google Cloud Project ID here or configure the GEE_PROJECT environment variable
+PROJECT_ID = os.environ.get("GEE_PROJECT", "your-gee-project-id")
 
 # Mumbai Metropolitan Region (MMR) Bounding Box
 # Lon min, Lat min, Lon max, Lat max
@@ -18,10 +19,10 @@ def get_mmr_geometry() -> ee.Geometry.Rectangle:
     """Returns Earth Engine geometry for Mumbai Metropolitan Region."""
     return ee.Geometry.Rectangle(MMR_BOUNDS)
 
-def initialize_gee():
-    """Initializes GEE with user project ID."""
+def initialize_gee(project_id: str = PROJECT_ID):
+    """Initializes GEE with project ID."""
     try:
-        ee.Initialize(project=PROJECT_ID)
+        ee.Initialize(project=project_id)
     except Exception as e:
         print(f"[!] Re-authenticating: {e}")
         ee.Authenticate()

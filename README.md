@@ -12,6 +12,11 @@ This project models the relationship between **physical urban growth**, **green 
 - **WorldPop**: Gridded population density per 100m pixel.
 - **BMC 24 Administrative Wards**: Ward polygons for localized zonal reductions.
 
+## 🗺️ Interactive Web Map Preview
+
+![Mumbai Urban Growth & Inequality Interactive Map](reports/figures/map1.png)
+*Interactive Leaflet atlas showing 24 BMC wards with Esri satellite imagery, real-time NDVI green cover metrics, and 2030/2035 urban growth projections.*
+
 ---
 
 ## 🎯 Model Accuracy & Validation Results
@@ -69,8 +74,7 @@ Project_1/
 │   ├── spatial_inequality.py                    # Ward-level zonal reductions
 │   ├── urban_growth_model.py                    # Logistic growth modeling & Gini indexing
 │   ├── evaluate_model.py                        # Historical backtesting & accuracy metrics
-│   ├── visualize_mumbai.py                      # Map and chart generation
-│   └── create_notebook.py                       # Programmatic notebook generator
+│   └── visualize_mumbai.py                      # Map and chart generation
 │
 ├── notebooks/
 │   └── mumbai_urban_growth_inequality.ipynb     # Interactive research Jupyter notebook
@@ -79,6 +83,7 @@ Project_1/
 │   ├── mumbai_interactive_map.html              # Interactive Leaflet web map
 │   ├── model_validation_report.json             # Full statistical accuracy report
 │   └── figures/
+│       ├── map1.png                             # Interactive map screenshot with popup
 │       ├── model_accuracy_validation.png        # Backtest scatter plot (R² = 0.9982)
 │       ├── spatial_inequality_ranking.png       # Green Deficit vs Economic Radiance
 │       ├── urban_growth_trajectories.png        # 2000-2035 growth curves
@@ -93,9 +98,12 @@ Project_1/
 
 ## 🚀 How to Run the Pipeline
 
-1. **Activate the Virtual Environment**:
+1. **Activate the Virtual Environment & Set Earth Engine Project**:
    ```powershell
    .\.venv\Scripts\Activate.ps1
+   
+   # Optional: Set your own Google Cloud Project ID (or pass in code)
+   $env:GEE_PROJECT="your-project-id"
    ```
 
 2. **Execute Full Pipeline**:

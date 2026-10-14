@@ -12,16 +12,16 @@ import os
 import json
 import ee
 
-PROJECT_ID = "maximal-dynamo-506718-g8"
+PROJECT_ID = os.environ.get("GEE_PROJECT", "your-gee-project-id")
 WARDS_GEOJSON_PATH = "data/raw/mumbai_bmc_wards.geojson"
 OUTPUT_METRICS_PATH = "data/processed/mumbai_ward_inequality.json"
 
-def initialize_gee():
+def initialize_gee(project_id: str = PROJECT_ID):
     try:
-        ee.Initialize(project=PROJECT_ID)
+        ee.Initialize(project=project_id)
     except Exception:
         ee.Authenticate()
-        ee.Initialize(project=PROJECT_ID)
+        ee.Initialize(project=project_id)
 
 def load_wards_fc() -> ee.FeatureCollection:
     """Loads Mumbai 24 BMC wards GeoJSON into an Earth Engine FeatureCollection."""
