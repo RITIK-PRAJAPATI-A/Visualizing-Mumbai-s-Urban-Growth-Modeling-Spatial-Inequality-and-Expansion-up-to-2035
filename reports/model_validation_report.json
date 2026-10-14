@@ -1,0 +1,253 @@
+{
+  "evaluation_methodology": "10-Year Historical Holdout Backtesting (Trained on 2000->2010, Blind Test on 2020)",
+  "sample_size": 24,
+  "overall_metrics": {
+    "r2_score": 0.9982,
+    "predictive_accuracy_pct": 98.62,
+    "mean_absolute_percentage_error_mape": 1.38,
+    "root_mean_squared_error_rmse": 34.4,
+    "mean_absolute_error_mae": 29.57
+  },
+  "ward_backtest_results": [
+    {
+      "ward": "R/C",
+      "b2000_train": 777.87,
+      "b2010_train": 840.66,
+      "b2020_actual": 874.9,
+      "b2020_predicted": 875.51,
+      "abs_error_m2": 0.61,
+      "percentage_error": 0.07,
+      "accuracy_pct": 99.93
+    },
+    {
+      "ward": "C",
+      "b2000_train": 3856.23,
+      "b2010_train": 3857.44,
+      "b2020_actual": 3863.51,
+      "b2020_predicted": 3860.29,
+      "abs_error_m2": 3.22,
+      "percentage_error": 0.08,
+      "accuracy_pct": 99.92
+    },
+    {
+      "ward": "E",
+      "b2000_train": 3388.78,
+      "b2010_train": 3411.92,
+      "b2020_actual": 3429.83,
+      "b2020_predicted": 3414.44,
+      "abs_error_m2": 15.39,
+      "percentage_error": 0.45,
+      "accuracy_pct": 99.55
+    },
+    {
+      "ward": "B",
+      "b2000_train": 2977.28,
+      "b2010_train": 2996.02,
+      "b2020_actual": 3016.83,
+      "b2020_predicted": 3001.03,
+      "abs_error_m2": 15.8,
+      "percentage_error": 0.52,
+      "accuracy_pct": 99.48
+    },
+    {
+      "ward": "H/W",
+      "b2000_train": 3025.59,
+      "b2010_train": 3036.76,
+      "b2020_actual": 3057.72,
+      "b2020_predicted": 3039.0,
+      "abs_error_m2": 18.72,
+      "percentage_error": 0.61,
+      "accuracy_pct": 99.39
+    },
+    {
+      "ward": "R/S",
+      "b2000_train": 1918.24,
+      "b2010_train": 1996.0,
+      "b2020_actual": 2033.62,
+      "b2020_predicted": 2020.45,
+      "abs_error_m2": 13.17,
+      "percentage_error": 0.65,
+      "accuracy_pct": 99.35
+    },
+    {
+      "ward": "T",
+      "b2000_train": 660.87,
+      "b2010_train": 699.04,
+      "b2020_actual": 728.23,
+      "b2020_predicted": 723.18,
+      "abs_error_m2": 5.05,
+      "percentage_error": 0.69,
+      "accuracy_pct": 99.31
+    },
+    {
+      "ward": "G/N",
+      "b2000_train": 2835.91,
+      "b2010_train": 2840.37,
+      "b2020_actual": 2868.11,
+      "b2020_predicted": 2846.04,
+      "abs_error_m2": 22.07,
+      "percentage_error": 0.77,
+      "accuracy_pct": 99.23
+    },
+    {
+      "ward": "R/N",
+      "b2000_train": 1465.88,
+      "b2010_train": 1557.41,
+      "b2020_actual": 1600.33,
+      "b2020_predicted": 1586.38,
+      "abs_error_m2": 13.95,
+      "percentage_error": 0.87,
+      "accuracy_pct": 99.13
+    },
+    {
+      "ward": "G/S",
+      "b2000_train": 2559.9,
+      "b2010_train": 2580.86,
+      "b2020_actual": 2614.98,
+      "b2020_predicted": 2586.01,
+      "abs_error_m2": 28.97,
+      "percentage_error": 1.11,
+      "accuracy_pct": 98.89
+    },
+    {
+      "ward": "F/N",
+      "b2000_train": 2159.63,
+      "b2010_train": 2228.41,
+      "b2020_actual": 2269.8,
+      "b2020_predicted": 2242.26,
+      "abs_error_m2": 27.54,
+      "percentage_error": 1.21,
+      "accuracy_pct": 98.79
+    },
+    {
+      "ward": "D",
+      "b2000_train": 2578.12,
+      "b2010_train": 2604.22,
+      "b2020_actual": 2641.94,
+      "b2020_predicted": 2609.45,
+      "abs_error_m2": 32.49,
+      "percentage_error": 1.23,
+      "accuracy_pct": 98.77
+    },
+    {
+      "ward": "H/E",
+      "b2000_train": 2270.42,
+      "b2010_train": 2335.73,
+      "b2020_actual": 2384.03,
+      "b2020_predicted": 2348.88,
+      "abs_error_m2": 35.15,
+      "percentage_error": 1.47,
+      "accuracy_pct": 98.53
+    },
+    {
+      "ward": "K/W",
+      "b2000_train": 2320.33,
+      "b2010_train": 2375.82,
+      "b2020_actual": 2426.47,
+      "b2020_predicted": 2386.98,
+      "abs_error_m2": 39.49,
+      "percentage_error": 1.63,
+      "accuracy_pct": 98.37
+    },
+    {
+      "ward": "P/N",
+      "b2000_train": 1009.63,
+      "b2010_train": 1109.79,
+      "b2020_actual": 1169.03,
+      "b2020_predicted": 1149.62,
+      "abs_error_m2": 19.41,
+      "percentage_error": 1.66,
+      "accuracy_pct": 98.34
+    },
+    {
+      "ward": "N",
+      "b2000_train": 1280.05,
+      "b2010_train": 1301.86,
+      "b2020_actual": 1330.99,
+      "b2020_predicted": 1308.67,
+      "abs_error_m2": 22.32,
+      "percentage_error": 1.68,
+      "accuracy_pct": 98.32
+    },
+    {
+      "ward": "F/S",
+      "b2000_train": 2973.75,
+      "b2010_train": 2986.01,
+      "b2020_actual": 3045.4,
+      "b2020_predicted": 2991.09,
+      "abs_error_m2": 54.31,
+      "percentage_error": 1.78,
+      "accuracy_pct": 98.22
+    },
+    {
+      "ward": "L",
+      "b2000_train": 2841.64,
+      "b2010_train": 2892.49,
+      "b2020_actual": 2957.45,
+      "b2020_predicted": 2902.52,
+      "abs_error_m2": 54.93,
+      "percentage_error": 1.86,
+      "accuracy_pct": 98.14
+    },
+    {
+      "ward": "M/W",
+      "b2000_train": 2130.56,
+      "b2010_train": 2196.43,
+      "b2020_actual": 2252.17,
+      "b2020_predicted": 2209.7,
+      "abs_error_m2": 42.47,
+      "percentage_error": 1.89,
+      "accuracy_pct": 98.11
+    },
+    {
+      "ward": "P/S",
+      "b2000_train": 1403.29,
+      "b2010_train": 1503.4,
+      "b2020_actual": 1567.08,
+      "b2020_predicted": 1535.17,
+      "abs_error_m2": 31.91,
+      "percentage_error": 2.04,
+      "accuracy_pct": 97.96
+    },
+    {
+      "ward": "K/E",
+      "b2000_train": 2544.56,
+      "b2010_train": 2619.91,
+      "b2020_actual": 2694.07,
+      "b2020_predicted": 2635.08,
+      "abs_error_m2": 58.99,
+      "percentage_error": 2.19,
+      "accuracy_pct": 97.81
+    },
+    {
+      "ward": "S",
+      "b2000_train": 1475.43,
+      "b2010_train": 1556.09,
+      "b2020_actual": 1623.25,
+      "b2020_predicted": 1581.56,
+      "abs_error_m2": 41.69,
+      "percentage_error": 2.57,
+      "accuracy_pct": 97.43
+    },
+    {
+      "ward": "A",
+      "b2000_train": 2205.93,
+      "b2010_train": 2248.25,
+      "b2020_actual": 2318.85,
+      "b2020_predicted": 2256.75,
+      "abs_error_m2": 62.1,
+      "percentage_error": 2.68,
+      "accuracy_pct": 97.32
+    },
+    {
+      "ward": "M/E",
+      "b2000_train": 1273.47,
+      "b2010_train": 1366.79,
+      "b2020_actual": 1446.25,
+      "b2020_predicted": 1396.42,
+      "abs_error_m2": 49.83,
+      "percentage_error": 3.45,
+      "accuracy_pct": 96.55
+    }
+  ]
+}

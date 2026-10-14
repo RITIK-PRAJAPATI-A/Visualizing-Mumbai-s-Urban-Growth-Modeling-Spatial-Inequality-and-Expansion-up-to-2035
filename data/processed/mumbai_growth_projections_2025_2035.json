@@ -1,0 +1,505 @@
+{
+  "metadata": {
+    "city": "Mumbai",
+    "region": "BMC 24 Administrative Wards",
+    "model_type": "Logistic Urban Expansion & Spatial Inequality Transition Model",
+    "base_epochs": [
+      2000,
+      2010,
+      2020
+    ],
+    "forecast_epochs": [
+      2025,
+      2030,
+      2035
+    ]
+  },
+  "inequality_indices": {
+    "green_disparity_gini": 0.1823,
+    "economic_radiance_gini": 0.2026,
+    "per_capita_economic_gini": 0.1049,
+    "built_up_concentration_gini": 0.2018
+  },
+  "ward_projections": [
+    {
+      "ward": "P/N",
+      "historical": {
+        "2000": 1009.63,
+        "2010": 1109.79,
+        "2020": 1169.03
+      },
+      "predicted": {
+        "2025": 1183.98,
+        "2030": 1198.76,
+        "2035": 1213.36
+      },
+      "annual_growth_rate_pct": 0.73,
+      "carrying_capacity_K": 1800.0,
+      "saturation_2020_pct": 64.9,
+      "saturation_2035_pct": 67.4,
+      "ndvi_current": 0.3488,
+      "ndvi_predicted_2030": 0.3465,
+      "growth_pressure_class": "Moderate Growth Corridor"
+    },
+    {
+      "ward": "M/E",
+      "historical": {
+        "2000": 1273.47,
+        "2010": 1366.79,
+        "2020": 1446.25
+      },
+      "predicted": {
+        "2025": 1460.46,
+        "2030": 1474.49,
+        "2035": 1488.34
+      },
+      "annual_growth_rate_pct": 0.64,
+      "carrying_capacity_K": 2097.06,
+      "saturation_2020_pct": 69.0,
+      "saturation_2035_pct": 71.0,
+      "ndvi_current": 0.3154,
+      "ndvi_predicted_2030": 0.3137,
+      "growth_pressure_class": "Moderate Growth Corridor"
+    },
+    {
+      "ward": "P/S",
+      "historical": {
+        "2000": 1403.29,
+        "2010": 1503.4,
+        "2020": 1567.08
+      },
+      "predicted": {
+        "2025": 1580.45,
+        "2030": 1593.67,
+        "2035": 1606.74
+      },
+      "annual_growth_rate_pct": 0.55,
+      "carrying_capacity_K": 2272.27,
+      "saturation_2020_pct": 69.0,
+      "saturation_2035_pct": 70.7,
+      "ndvi_current": 0.3464,
+      "ndvi_predicted_2030": 0.3448,
+      "growth_pressure_class": "Moderate Growth Corridor"
+    },
+    {
+      "ward": "R/C",
+      "historical": {
+        "2000": 777.87,
+        "2010": 840.66,
+        "2020": 874.9
+      },
+      "predicted": {
+        "2025": 888.12,
+        "2030": 901.34,
+        "2035": 914.56
+      },
+      "annual_growth_rate_pct": 0.59,
+      "carrying_capacity_K": 1800.0,
+      "saturation_2020_pct": 48.6,
+      "saturation_2035_pct": 50.8,
+      "ndvi_current": 0.4238,
+      "ndvi_predicted_2030": 0.4213,
+      "growth_pressure_class": "Moderate Growth Corridor"
+    },
+    {
+      "ward": "S",
+      "historical": {
+        "2000": 1475.43,
+        "2010": 1556.09,
+        "2020": 1623.25
+      },
+      "predicted": {
+        "2025": 1635.23,
+        "2030": 1647.1,
+        "2035": 1658.86
+      },
+      "annual_growth_rate_pct": 0.48,
+      "carrying_capacity_K": 2353.71,
+      "saturation_2020_pct": 69.0,
+      "saturation_2035_pct": 70.5,
+      "ndvi_current": 0.349,
+      "ndvi_predicted_2030": 0.3476,
+      "growth_pressure_class": "Moderate Growth Corridor"
+    },
+    {
+      "ward": "R/N",
+      "historical": {
+        "2000": 1465.88,
+        "2010": 1557.41,
+        "2020": 1600.33
+      },
+      "predicted": {
+        "2025": 1611.19,
+        "2030": 1621.96,
+        "2035": 1632.63
+      },
+      "annual_growth_rate_pct": 0.44,
+      "carrying_capacity_K": 2320.48,
+      "saturation_2020_pct": 69.0,
+      "saturation_2035_pct": 70.4,
+      "ndvi_current": 0.4019,
+      "ndvi_predicted_2030": 0.4004,
+      "growth_pressure_class": "Moderate Growth Corridor"
+    },
+    {
+      "ward": "T",
+      "historical": {
+        "2000": 660.87,
+        "2010": 699.04,
+        "2020": 728.23
+      },
+      "predicted": {
+        "2025": 738.77,
+        "2030": 749.36,
+        "2035": 759.99
+      },
+      "annual_growth_rate_pct": 0.49,
+      "carrying_capacity_K": 1800.0,
+      "saturation_2020_pct": 40.5,
+      "saturation_2035_pct": 42.2,
+      "ndvi_current": 0.3593,
+      "ndvi_predicted_2030": 0.3576,
+      "growth_pressure_class": "Moderate Growth Corridor"
+    },
+    {
+      "ward": "K/E",
+      "historical": {
+        "2000": 2544.56,
+        "2010": 2619.91,
+        "2020": 2694.07
+      },
+      "predicted": {
+        "2025": 2701.73,
+        "2030": 2709.33,
+        "2035": 2716.87
+      },
+      "annual_growth_rate_pct": 0.29,
+      "carrying_capacity_K": 3367.59,
+      "saturation_2020_pct": 80.0,
+      "saturation_2035_pct": 80.7,
+      "ndvi_current": 0.2183,
+      "ndvi_predicted_2030": 0.2179,
+      "growth_pressure_class": "Moderate Growth Corridor"
+    },
+    {
+      "ward": "M/W",
+      "historical": {
+        "2000": 2130.56,
+        "2010": 2196.43,
+        "2020": 2252.17
+      },
+      "predicted": {
+        "2025": 2258.4,
+        "2030": 2264.58,
+        "2035": 2270.7
+      },
+      "annual_growth_rate_pct": 0.28,
+      "carrying_capacity_K": 2815.21,
+      "saturation_2020_pct": 80.0,
+      "saturation_2035_pct": 80.7,
+      "ndvi_current": 0.2566,
+      "ndvi_predicted_2030": 0.2561,
+      "growth_pressure_class": "Moderate Growth Corridor"
+    },
+    {
+      "ward": "R/S",
+      "historical": {
+        "2000": 1918.24,
+        "2010": 1996.0,
+        "2020": 2033.62
+      },
+      "predicted": {
+        "2025": 2039.54,
+        "2030": 2045.4,
+        "2035": 2051.22
+      },
+      "annual_growth_rate_pct": 0.29,
+      "carrying_capacity_K": 2542.02,
+      "saturation_2020_pct": 80.0,
+      "saturation_2035_pct": 80.7,
+      "ndvi_current": 0.3245,
+      "ndvi_predicted_2030": 0.3239,
+      "growth_pressure_class": "Moderate Growth Corridor"
+    },
+    {
+      "ward": "H/E",
+      "historical": {
+        "2000": 2270.42,
+        "2010": 2335.73,
+        "2020": 2384.03
+      },
+      "predicted": {
+        "2025": 2389.83,
+        "2030": 2395.59,
+        "2035": 2401.31
+      },
+      "annual_growth_rate_pct": 0.24,
+      "carrying_capacity_K": 2980.04,
+      "saturation_2020_pct": 80.0,
+      "saturation_2035_pct": 80.6,
+      "ndvi_current": 0.2085,
+      "ndvi_predicted_2030": 0.2082,
+      "growth_pressure_class": "Moderate Growth Corridor"
+    },
+    {
+      "ward": "A",
+      "historical": {
+        "2000": 2205.93,
+        "2010": 2248.25,
+        "2020": 2318.85
+      },
+      "predicted": {
+        "2025": 2324.62,
+        "2030": 2330.35,
+        "2035": 2336.03
+      },
+      "annual_growth_rate_pct": 0.25,
+      "carrying_capacity_K": 2898.56,
+      "saturation_2020_pct": 80.0,
+      "saturation_2035_pct": 80.6,
+      "ndvi_current": 0.1675,
+      "ndvi_predicted_2030": 0.1672,
+      "growth_pressure_class": "Moderate Growth Corridor"
+    },
+    {
+      "ward": "F/N",
+      "historical": {
+        "2000": 2159.63,
+        "2010": 2228.41,
+        "2020": 2269.8
+      },
+      "predicted": {
+        "2025": 2275.43,
+        "2030": 2281.02,
+        "2035": 2286.56
+      },
+      "annual_growth_rate_pct": 0.25,
+      "carrying_capacity_K": 2837.25,
+      "saturation_2020_pct": 80.0,
+      "saturation_2035_pct": 80.6,
+      "ndvi_current": 0.2422,
+      "ndvi_predicted_2030": 0.2418,
+      "growth_pressure_class": "Moderate Growth Corridor"
+    },
+    {
+      "ward": "K/W",
+      "historical": {
+        "2000": 2320.33,
+        "2010": 2375.82,
+        "2020": 2426.47
+      },
+      "predicted": {
+        "2025": 2431.88,
+        "2030": 2437.26,
+        "2035": 2442.6
+      },
+      "annual_growth_rate_pct": 0.22,
+      "carrying_capacity_K": 3033.09,
+      "saturation_2020_pct": 80.0,
+      "saturation_2035_pct": 80.5,
+      "ndvi_current": 0.272,
+      "ndvi_predicted_2030": 0.2716,
+      "growth_pressure_class": "Moderate Growth Corridor"
+    },
+    {
+      "ward": "L",
+      "historical": {
+        "2000": 2841.64,
+        "2010": 2892.49,
+        "2020": 2957.45
+      },
+      "predicted": {
+        "2025": 2962.71,
+        "2030": 2967.93,
+        "2035": 2973.12
+      },
+      "annual_growth_rate_pct": 0.2,
+      "carrying_capacity_K": 3600.0,
+      "saturation_2020_pct": 82.2,
+      "saturation_2035_pct": 82.6,
+      "ndvi_current": 0.1979,
+      "ndvi_predicted_2030": 0.1977,
+      "growth_pressure_class": "Saturated / Infill Only"
+    },
+    {
+      "ward": "N",
+      "historical": {
+        "2000": 1280.05,
+        "2010": 1301.86,
+        "2020": 1330.99
+      },
+      "predicted": {
+        "2025": 1335.01,
+        "2030": 1339.02,
+        "2035": 1343.02
+      },
+      "annual_growth_rate_pct": 0.2,
+      "carrying_capacity_K": 1929.94,
+      "saturation_2020_pct": 69.0,
+      "saturation_2035_pct": 69.6,
+      "ndvi_current": 0.3682,
+      "ndvi_predicted_2030": 0.3676,
+      "growth_pressure_class": "Saturated / Infill Only"
+    },
+    {
+      "ward": "D",
+      "historical": {
+        "2000": 2578.12,
+        "2010": 2604.22,
+        "2020": 2641.94
+      },
+      "predicted": {
+        "2025": 2645.17,
+        "2030": 2648.38,
+        "2035": 2651.58
+      },
+      "annual_growth_rate_pct": 0.12,
+      "carrying_capacity_K": 3302.43,
+      "saturation_2020_pct": 80.0,
+      "saturation_2035_pct": 80.3,
+      "ndvi_current": 0.2008,
+      "ndvi_predicted_2030": 0.2006,
+      "growth_pressure_class": "Saturated / Infill Only"
+    },
+    {
+      "ward": "G/N",
+      "historical": {
+        "2000": 2835.91,
+        "2010": 2840.37,
+        "2020": 2868.11
+      },
+      "predicted": {
+        "2025": 2870.97,
+        "2030": 2873.83,
+        "2035": 2876.68
+      },
+      "annual_growth_rate_pct": 0.1,
+      "carrying_capacity_K": 3585.14,
+      "saturation_2020_pct": 80.0,
+      "saturation_2035_pct": 80.2,
+      "ndvi_current": 0.2086,
+      "ndvi_predicted_2030": 0.2085,
+      "growth_pressure_class": "Saturated / Infill Only"
+    },
+    {
+      "ward": "G/S",
+      "historical": {
+        "2000": 2559.9,
+        "2010": 2580.86,
+        "2020": 2614.98
+      },
+      "predicted": {
+        "2025": 2617.76,
+        "2030": 2620.53,
+        "2035": 2623.29
+      },
+      "annual_growth_rate_pct": 0.11,
+      "carrying_capacity_K": 3268.72,
+      "saturation_2020_pct": 80.0,
+      "saturation_2035_pct": 80.3,
+      "ndvi_current": 0.1972,
+      "ndvi_predicted_2030": 0.1971,
+      "growth_pressure_class": "Saturated / Infill Only"
+    },
+    {
+      "ward": "C",
+      "historical": {
+        "2000": 3856.23,
+        "2010": 3857.44,
+        "2020": 3863.51
+      },
+      "predicted": {
+        "2025": 3864.94,
+        "2030": 3866.36,
+        "2035": 3867.78
+      },
+      "annual_growth_rate_pct": 0.1,
+      "carrying_capacity_K": 4172.59,
+      "saturation_2020_pct": 92.6,
+      "saturation_2035_pct": 92.7,
+      "ndvi_current": 0.1213,
+      "ndvi_predicted_2030": 0.1213,
+      "growth_pressure_class": "Saturated / Infill Only"
+    },
+    {
+      "ward": "F/S",
+      "historical": {
+        "2000": 2973.75,
+        "2010": 2986.01,
+        "2020": 3045.4
+      },
+      "predicted": {
+        "2025": 3046.74,
+        "2030": 3048.07,
+        "2035": 3049.4
+      },
+      "annual_growth_rate_pct": 0.12,
+      "carrying_capacity_K": 3289.03,
+      "saturation_2020_pct": 92.6,
+      "saturation_2035_pct": 92.7,
+      "ndvi_current": 0.2353,
+      "ndvi_predicted_2030": 0.2352,
+      "growth_pressure_class": "Saturated / Infill Only"
+    },
+    {
+      "ward": "E",
+      "historical": {
+        "2000": 3388.78,
+        "2010": 3411.92,
+        "2020": 3429.83
+      },
+      "predicted": {
+        "2025": 3431.1,
+        "2030": 3432.36,
+        "2035": 3433.62
+      },
+      "annual_growth_rate_pct": 0.1,
+      "carrying_capacity_K": 3704.22,
+      "saturation_2020_pct": 92.6,
+      "saturation_2035_pct": 92.7,
+      "ndvi_current": 0.1833,
+      "ndvi_predicted_2030": 0.1832,
+      "growth_pressure_class": "Saturated / Infill Only"
+    },
+    {
+      "ward": "H/W",
+      "historical": {
+        "2000": 3025.59,
+        "2010": 3036.76,
+        "2020": 3057.72
+      },
+      "predicted": {
+        "2025": 3058.85,
+        "2030": 3059.98,
+        "2035": 3061.1
+      },
+      "annual_growth_rate_pct": 0.1,
+      "carrying_capacity_K": 3302.34,
+      "saturation_2020_pct": 92.6,
+      "saturation_2035_pct": 92.7,
+      "ndvi_current": 0.2213,
+      "ndvi_predicted_2030": 0.2212,
+      "growth_pressure_class": "Saturated / Infill Only"
+    },
+    {
+      "ward": "B",
+      "historical": {
+        "2000": 2977.28,
+        "2010": 2996.02,
+        "2020": 3016.83
+      },
+      "predicted": {
+        "2025": 3017.95,
+        "2030": 3019.06,
+        "2035": 3020.16
+      },
+      "annual_growth_rate_pct": 0.1,
+      "carrying_capacity_K": 3258.18,
+      "saturation_2020_pct": 92.6,
+      "saturation_2035_pct": 92.7,
+      "ndvi_current": 0.1273,
+      "ndvi_predicted_2030": 0.1273,
+      "growth_pressure_class": "Saturated / Infill Only"
+    }
+  ]
+}
